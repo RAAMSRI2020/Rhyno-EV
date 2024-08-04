@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.jsx
+import React from 'react';
+import Navbar from './components/Navbar';
 
 function App() {
-    return ( 
-    <h1 className = "text-3xl font-bold underline header" >
-        Hello world!
-    </h1>
-    );
+  return (
+    <div>
+      <Navbar />
+      <div className="p-4">
+        {/* Your content goes here */}
+      </div>
+    </div>
+  );
 }
 
 export default App;
