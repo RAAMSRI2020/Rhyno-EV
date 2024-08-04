@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Rhyno-EV
+RHYNO EV Website  This repository contains the source code for the official website of RHYNO EV, an innovative electric vehicle company. The website is built using React and showcases the company's products, their features, and provides options for users to pre-book, compare products, and get in touch with the company.
+>>>>>>> origin/main
