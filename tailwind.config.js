@@ -31,7 +31,12 @@ module.exports = {
                 200: '#FFF225',
             },
         },
-        extend: {},
+        extend: {
+            fontFamily: {
+                lato: ['Lato'],
+                poppins: ['Poppins'],
+            }
+        },
     },
     plugins: [],
 }
