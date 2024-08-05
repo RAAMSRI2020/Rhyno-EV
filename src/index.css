@@ -9,31 +9,8 @@ html,
 body {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
-
-
-/* src/index.css or src/styles/globals.css */
-
-
-/* @keyframes fadeIn { */
-
-
-/* from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate-fadeIn {
-    animation: fadeIn 1s ease-out;
-} */
-
-
-/* src/pages/Home.css */
 
 .typing-animation {
     display: inline-block;

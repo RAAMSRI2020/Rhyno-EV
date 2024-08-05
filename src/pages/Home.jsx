@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import vehicle from '../images/vehicle.png';
 import '../index.css'; // Custom CSS for Home page styles
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const carouselSettings = {
   dots: true,
@@ -28,7 +30,9 @@ const Home = () => {
   }, []);
 
   return (
+    
     <div className="relative">
+        <Navbar/>
       {/* Front Line */}
       <section className="relative text-center py-20 bg-gray-900 text-white overflow-hidden">
         <div className="absolute inset-0">
@@ -78,6 +82,7 @@ const Home = () => {
       <a href="/prebook" className="fixed bottom-4 right-4 bg-yellow-500 text-black py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300 transform-gpu hover:scale-105 animate-fadeIn">
         Pre-book Now
       </a>
+      <Footer/>
     </div>
   );
 };

@@ -19,7 +19,8 @@ const Navbar = () => {
           {/* Primary Navbar items */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="/" className="py-4 px-2 text-grey-100 border-b-4 border-transparent hover:text-white-100 hover:border-yellow-100 transition duration-300">Home</a>
-            <a href="/about" className="py-4 px-2 text-grey-100 border-b-4 border-transparent hover:text-white-100 hover:border-yellow-100 transition duration-300">About Us</a>
+            <a href="/about" className="py-4 px-2 text-grey-100 border-b-4 border-transparent hover:text-yellow-100 hover:border-yellow-100 transition duration-300">About Us</a>
+
             <div
               className="relative"
               onMouseEnter={() => setIsProductsOpen(true)}
