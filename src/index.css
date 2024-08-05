@@ -1,5 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* src/index.css or src/styles/globals.css */
+
+
+/* @keyframes fadeIn { */
+
+
+/* from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+} */
+
+
+/* src/pages/Home.css */
+
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid orange;
+    /* Cursor color */
+    animation: typing 3.5s steps(30, end) infinite, blink 0.75s step-end infinite;
+}
+
+
+/* src/pages/Home.css */
+
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid orange;
+    /* Cursor color */
+    animation: typing 3.5s steps(30, end) infinite, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+.bg-gray-800 {
+    background: rgba(31, 41, 55, 0.8);
+    /* Tailwind Gray-800 with opacity */
+}
+
+.backdrop-blur-md {
+    backdrop-filter: blur(10px);
+    /* Medium blur effect */
+}
