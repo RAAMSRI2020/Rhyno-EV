@@ -1,0 +1,74 @@
+/* SE03Lite.css */
+
+.product-page {
+    background-color: #f9f9f9;
+}
+
+.color-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.color-button:hover {
+    opacity: 0.9;
+}
+
+.product-card img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+}
+
+.border-t {
+    border-top: 1px solid #ddd;
+}
+
+.color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.color-circle.red {
+    background-color: red;
+}
+
+.color-circle.blue {
+    background-color: blue;
+}
+
+.color-circle.black {
+    background-color: black;
+}
+
+.color-circle:hover {
+    opacity: 0.8;
+}
+
+.product-page {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}

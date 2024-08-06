@@ -19,7 +19,7 @@ const Navbar = () => {
           {/* Primary Navbar items */}
           <div className="hidden md:flex items-center space-x-8 text-white-200">
             <a href="/" className="py-4 px-2 text-gray-100 border-b-4 border-transparent hover:text-white hover:border-yellow-100 transition duration-300">Home</a>
-            <a href="/about" className="py-4 px-2 text-gray-100 border-b-4 border-transparent hover:text-yellow-500 hover:border-yellow-100 transition duration-300">About Us</a>
+            <a href="/about-us" className="py-4 px-2 text-gray-100 border-b-4 border-transparent hover:text-yellow-500 hover:border-yellow-100 transition duration-300">About Us</a>
 
             <div
               className="relative"
@@ -31,14 +31,14 @@ const Navbar = () => {
               </button>
               {isProductsOpen && (
                 <div className="absolute left-0 bg-black text-black-300 shadow-lg mt-1 rounded w-40 text-center z-50"> {/* Increased z-index */}
-                  <a href="/product1" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO Lite</a> {/* Updated text color */}
-                  <a href="/product2" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO</a>
-                  <a href="/product3" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO Max</a>
-                  <a href="/product4" className="block px-4 py-2 text-white hover:bg-gray-700">Compare All</a>
+                  <a href="/seo3lite" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO Lite</a> {/* Updated text color */}
+                  <a href="//seo3" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO</a>
+                  <a href="/SE03Max" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO Max</a>
+                  <a href="/seo3max" className="block px-4 py-2 text-white hover:bg-gray-700">Compare All</a>
                 </div>
               )}
             </div>
-            <a href="/contact" className="py-4 px-2 text-gray-100 border-b-4 border-transparent hover:text-yellow-500 hover:border-yellow-100 transition duration-300">Contact Us</a>
+            <a href="/contact-us" className="py-4 px-2 text-gray-100 border-b-4 border-transparent hover:text-yellow-500 hover:border-yellow-100 transition duration-300">Contact Us</a>
             <a href="/prebook" className="py-2 px-4 bg-yellow-500 text-black rounded hover:bg-yellow-100 transition duration-300">Pre-book Now</a>
           </div>
           {/* Mobile menu button */}
@@ -67,10 +67,10 @@ const Navbar = () => {
           </button>
           {isProductsOpen && (
             <div>
-              <a href="/product1" className="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-700">S3EO Lite</a>
-              <a href="/product2" className="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-700">S3EO</a>
-              <a href="/product3" className="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-700">S3EO Max</a>
-              <a href="/product4" className="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-700">Compare All</a>
+              <a href="/seo3lite" className="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-700">S3EO Lite</a>
+              <a href="/seo3" className="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-700">S3EO</a>
+              <a href="/seo3max" className="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-700">S3EO Max</a>
+              <a href="/compare" className="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-700">Compare All</a>
             </div>
           )}
           <a href="/contact" className="block py-2 px-4 text-sm text-gray-100 hover:bg-gray-700">Contact Us</a>

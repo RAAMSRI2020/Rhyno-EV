@@ -1,0 +1,53 @@
+.product-page {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+    table {
+        font-size: 0.9rem;
+    }
+    img {
+        height: 40vh;
+    }
+    a {
+        padding: 0.5rem 2rem;
+        font-size: 1rem;
+    }
+}
