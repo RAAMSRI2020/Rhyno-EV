@@ -32,9 +32,9 @@ const Navbar = () => {
               {isProductsOpen && (
                 <div className="absolute left-0 bg-black text-black-300 shadow-lg mt-1 rounded w-40 text-center z-50"> {/* Increased z-index */}
                   <a href="/seo3lite" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO Lite</a> {/* Updated text color */}
-                  <a href="//seo3" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO</a>
-                  <a href="/SE03Max" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO Max</a>
-                  <a href="/seo3max" className="block px-4 py-2 text-white hover:bg-gray-700">Compare All</a>
+                  <a href="/seo3" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO</a>
+                  <a href="/seo3Max" className="block px-4 py-2 text-white hover:bg-gray-700">S3EO Max</a>
+                  <a href="/compare-all" className="block px-4 py-2 text-white hover:bg-gray-700">Compare All</a>
                 </div>
               )}
             </div>

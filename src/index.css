@@ -77,3 +77,49 @@ body {
 .animate-spin {
     animation: spin 1s linear infinite;
 }
+
+
+/* Ensure this file is imported in your Home component */
+
+
+/* .slider-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.slider-item {
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.slider-item h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.slider-item p {
+    font-size: 1.25rem;
+} */

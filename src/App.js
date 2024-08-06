@@ -28,6 +28,7 @@ function App() {
         <Route path="/seo3" element={<SEO3 />} />
         <Route path="/seo3lite" element={<SEO3Lite />} />
         <Route path="/seo3max" element={<SEO3Max />} />
+        {/* <Route path="/prebook" element={<Prebook />} /> */}
       </Routes>
       
     </Router>

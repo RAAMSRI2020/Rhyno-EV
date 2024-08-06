@@ -3,10 +3,13 @@ import React from 'react';
 import vehicle from '../images/vehicle.png';
 
 import './CompareAll.css';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const CompareAll = () => {
   return (
     <div className="compare-page">
+      <Navbar/>
       <div className="container mx-auto p-4">
         <h1 className="text-3xl font-bold text-gray-800 text-center mb-8">Compare All Models</h1>
         <div className="model-comparison">
@@ -112,6 +115,7 @@ const CompareAll = () => {
           Buy Now
         </a>
       </div>
+      <Footer/>
     </div>
   );
 };
