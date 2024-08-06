@@ -1,36 +1,45 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const OrderDetails = () => {
+  const { name } = useParams(); // Capture vehicle name from URL
   const [formData, setFormData] = useState({
-    name: '',
+    vehicleName: name || '',
+    customerName: '',
+    whatsappNumber: '',
+    email: '',
     age: '',
     gender: '',
-    licensePhoto: null
+    licensePhoto: null,
   });
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log('Vehicle Name:', name); // Log the vehicle name
+    console.log('Form Data:', formData); // Log the form data
+    setFormData(prevData => ({ ...prevData, vehicleName: name }));
+  }, [name, formData]); // Include formData in the dependency array
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
     if (name === 'licensePhoto') {
       setFormData({
         ...formData,
-        [name]: files[0]
+        [name]: files[0],
       });
     } else {
       setFormData({
         ...formData,
-        [name]: value
+        [name]: value,
       });
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Redirect to OrderConfirmation page with state
     navigate('/order-confirmation', { state: { ...formData } });
   };
 
@@ -42,11 +51,44 @@ const OrderDetails = () => {
           <h1 className="text-3xl font-bold text-center mb-8">Order Details</h1>
           <form onSubmit={handleSubmit} className="max-w-lg mx-auto bg-white p-8 rounded shadow-md">
             <div className="mb-4">
-              <label className="block text-gray-700">Name</label>
+              <label className="block text-gray-700">Model</label>
               <input
                 type="text"
-                name="name"
-                value={formData.name}
+                name="vehicleName"
+                value={formData.vehicleName}
+                onChange={handleChange}
+                className="w-full px-3 py-2 border border-gray-300 rounded"
+                readOnly
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-gray-700">Customer Name</label>
+              <input
+                type="text"
+                name="customerName"
+                value={formData.customerName}
+                onChange={handleChange}
+                className="w-full px-3 py-2 border border-gray-300 rounded"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-gray-700">WhatsApp Number</label>
+              <input
+                type="tel"
+                name="whatsappNumber"
+                value={formData.whatsappNumber}
+                onChange={handleChange}
+                className="w-full px-3 py-2 border border-gray-300 rounded"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-gray-700">Email</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
                 onChange={handleChange}
                 className="w-full px-3 py-2 border border-gray-300 rounded"
                 required
@@ -91,7 +133,7 @@ const OrderDetails = () => {
             </div>
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-yellow-500 text-black rounded hover:bg-yellow-400"
+              className="w-full py-2 px-4 bg-yellow-100 text-black-100 rounded hover:bg-yellow-200"
             >
               Submit
             </button>

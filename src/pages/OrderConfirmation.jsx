@@ -50,7 +50,7 @@ const OrderConfirmation = () => {
                 </ul>
               </div>
               <button
-                className="w-full py-2 px-4 bg-yellow-500 text-black rounded hover:bg-yellow-400"
+                className="w-full py-2 px-4 bg-yellow-100 text-black-100 rounded hover:bg-yellow-200"
                 onClick={() => {
                   // Handle payment gateway redirection or functionality here
                 }}
