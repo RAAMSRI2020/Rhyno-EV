@@ -30,9 +30,9 @@ const Home = () => {
   }, []);
 
   return (
-    
     <div className="relative">
-        <Navbar/>
+      <Navbar />
+      <br />
       {/* Front Line */}
       <section className="relative text-center py-20 bg-gray-900 text-white overflow-hidden">
         <div className="absolute inset-0">
@@ -78,11 +78,22 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Rental Section */}
+      <section className="py-12 bg-gray-200 text-black">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-4xl font-bold mb-6">Rent Our Ev's at a minimum cost</h2>
+          <p className="text-lg md:text-xl mb-4">Experience the best rental service with our premium electric scooters.</p>
+          <a href="/rentals" className="inline-block py-3 px-6 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition duration-300">
+            Get Rents
+          </a>
+        </div>
+      </section>
+
       {/* Floating Pre-book Now Button */}
-      <a href="/prebook" className="fixed bottom-4 right-4 bg-yellow-500 text-black py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300 transform-gpu hover:scale-105 animate-fadeIn">
+      <a href="/rentals" className="fixed bottom-4 right-4 bg-yellow-500 text-black py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300 transform-gpu hover:scale-105 animate-fadeIn">
         Pre-book Now
       </a>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
